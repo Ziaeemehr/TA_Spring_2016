@@ -1,0 +1,6 @@
+gfortran -o randu2D randu2D.f90
+./randu2D
+gfortran -o randu3D randu3D.f90
+./randu3D
+gnuplot plot --persist
+rm -f randu2D randu3D 

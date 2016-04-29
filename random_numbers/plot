@@ -1,0 +1,27 @@
+#!/usr/bin/gnuplot
+
+set terminal wxt 0
+set xtics 0.2
+set ytics 0.2
+plot "out2D.txt" every ::::10000 u 1:2 w p ps 0.3 pt 7 title " "
+
+set terminal wxt 1
+set xtics 0.2
+set ytics 0.2
+plot "out2D.txt" u 1:2 w p ps 0.5 pt 7 title " " 
+
+set terminal wxt 2
+set view 61,323
+set xtics 0.2
+set ytics 0.2
+set ztics 0.2
+splot "out3D.txt" every ::::10000  w p ps 0.3 pt 7 title " "
+
+set terminal wxt 3
+set view 61,323
+set xtics 0.2
+set ytics 0.2
+set ztics 0.2
+splot "out3D.txt" w p ps 0.5 pt 7 title " " 
+
+
